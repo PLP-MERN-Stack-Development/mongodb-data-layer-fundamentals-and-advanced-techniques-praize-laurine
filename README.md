@@ -1,59 +1,53 @@
-# MongoDB Fundamentals - Week 1
+# PLP Bookstore MongoDB Scripts
 
-## Setup Instructions
+This project contains MongoDB scripts for managing and querying data in a bookstore database called **plp_bookstore**.
 
-Before you begin this assignment, please make sure you have the following installed:
+---
 
-1. **MongoDB Community Edition** - [Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/)
-2. **MongoDB Shell (mongosh)** - This is included with MongoDB Community Edition
-3. **Node.js** - [Download here](https://nodejs.org/)
+## Project Overview
 
-### Node.js Package Setup
+The scripts demonstrate basic CRUD (Create, Read, Update, Delete) and query operations in MongoDB using Node.js.
 
-Once you have Node.js installed, run the following commands in your assignment directory:
+Example operations include:
+- Inserting book records
+- Finding books by genre or author
+- Updating book details
+- Deleting books
+- Running aggregation queries (optional)
 
-```bash
-# Initialize a package.json file
-npm init -y
+---
 
-# Install the MongoDB Node.js driver
-npm install mongodb
-```
+## Prerequisites
 
-## Assignment Overview
+Before running the scripts, make sure you have:
 
-This week focuses on MongoDB fundamentals including:
-- Creating and connecting to MongoDB databases
-- CRUD operations (Create, Read, Update, Delete)
-- MongoDB queries and filters
-- Aggregation pipelines
-- Indexing for performance
+1. **Node.js** installed  
+   - [Download Node.js](https://nodejs.org/)
+   - Check installation:
+     ```bash
+     node -v
+     npm -v
+     ```
 
-## Submission
+2. **MongoDB** installed and running locally  
+   - Start MongoDB (on Linux):
+     ```bash
+     sudo systemctl start mongod
+     ```
+   - Or run it manually:
+     ```bash
+     mongod
+     ```
 
-Complete all the exercises in this assignment and push your code to GitHub using the provided GitHub Classroom link.
+3. **MongoDB Database Setup**
+   - The database name is `plp_bookstore`.
+   - You can create it automatically by running the insert script (MongoDB creates databases and collections on first insert).
 
-## Getting Started
+---
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+## Installation & Setup
 
-## Files Included
-
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
-
-## Requirements
-
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
-
-## Resources
-
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+1. Clone or download this project folder  
+2. Navigate into it:
+   ```bash
+   cd mongodb-data-layer-fundamentals-and-advanced-techniques
