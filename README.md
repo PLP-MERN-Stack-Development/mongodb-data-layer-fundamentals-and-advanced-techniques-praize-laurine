@@ -36,7 +36,7 @@ Before running the scripts, make sure you have:
      ```
    - Or run it manually:
      ```bash
-     mongod
+     mongosh
      ```
 
 3. **MongoDB Database Setup**
